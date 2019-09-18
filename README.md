@@ -20,3 +20,12 @@ Thread ID: 3969287
 * Now, go ahead lets create the post!
 `python poster.py`
 * Your post must be posted on XDA if all things went right!
+
+
+
+Thanks:
+
+* [@yshalsager](https://github.com/yshalsager)
+* [@shreejoy](https://github.com/shreejoy)
+
+For pointing out this great API did exist! Google didn't show me anything about this API!
