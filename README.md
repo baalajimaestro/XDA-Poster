@@ -5,8 +5,12 @@ Then I figured out a sweet solution to feed my laziness. The XDA API!!!
 
 ### What do you need to do to get it working?
 
-* Your important place to lookout is [XDA API](https://api.xda-developers.com/explorer/)
-* Get your OAuth2 Token by pressing the button on the Right Corner, thats your XDA_API_KEY
+
+* There is a `sample_config.env` provided for your use.
+* Rename it to `config.env` before you get started
+* Grab your XDA Username, Password, fill it in `config.env`
+* I will be using XDA Username, Password to fetch the XDA API Key for further use.
+* **YOUR PASSWORD IS NEVER STORED ANYWHERE, YOU CAN CHECK THE SOURCE, IF YOU DONT BELIEVE ME**
 * For XDA_THREAD_ID well, goto your thread link and grab the integers after t
 ```
 Eg: https://forum.xda-developers.com/redmi-note-5-pro/development/9-0-resurrectionremix-official-7-0-2-t3969287
@@ -17,11 +21,12 @@ Thread ID: 3969287
 * Add these all to `config.env` or Environment Variables, both work fine
 * For using `config.env`, a sample config is given, follow the same pattern
 * Get python3 and pip from your distro's package manager or for windows install python3
-`pip install requests dotenv`
+`pip install -U requirements.txt`
+* Lets get the API Key
+`python get_api_key.py`
 * Now, go ahead lets create the post!
 `python poster.py`
 * Your post must be posted on XDA if all things went right!
-
 
 
 Thanks:
