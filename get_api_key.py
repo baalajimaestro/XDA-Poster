@@ -6,6 +6,7 @@
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver import ActionChains
 from time import sleep
 import re
@@ -15,9 +16,13 @@ from dotenv import load_dotenv
 
 load_dotenv("config.env")
 
-driver = webdriver.Chrome()
+# Run Chrome Headless
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--window-size=1920x1080")
+
+driver = webdriver.Chrome(chrome_options=chrome_options)
 driver.implicitly_wait(30)
-driver.maximize_window()
 
 # Grab the current window
 main_window_handle = None
