@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 #
-# Copyright © 2019 Maestro Creativescape
+# Copyright © 2020 Maestro Creativescape
 #
 # SPDX-License-Identifier: GPL-3.0
 #
