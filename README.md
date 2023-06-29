@@ -1,4 +1,5 @@
-# Hello XDA!
+# Doesnt work with Xenforo Based New UI
+
 
 I was always lazy to post a detail about my ROM updates on XDA forum.
 Then I figured out a sweet solution to feed my laziness. The XDA API!!!
